@@ -8,18 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/auth")
 public class TestAuthController {
 
-@GetMapping("/hello")
-public String hello(){
+    @GetMapping("/hello")
+        public String hello(){
+        return "Hello world";
+    }
 
-    return "Hello world";
-
-}
-
-@GetMapping("/hello-secured")
-public String helloSecured(){
-
-    return "Hello world Secured";
-
-}
+    @GetMapping("/hello-secured")
+        public String helloSecured(){
+        return "Hello world Secured";
+    }
 
 }
